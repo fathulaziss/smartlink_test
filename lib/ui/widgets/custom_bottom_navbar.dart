@@ -8,23 +8,53 @@ class CustomBottomNavBar extends StatelessWidget {
       width: double.infinity,
       color: Colors.white,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            width: 32,
-            height: 32,
-            decoration: BoxDecoration(
-                image:
-                    DecorationImage(image: AssetImage("assets/ic_home.png"))),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 32,
+                height: 32,
+                margin: EdgeInsets.symmetric(horizontal: 75),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/ic_home.png"))),
+              ),
+              SizedBox(
+                height: 3,
+              ),
+              Text("Home",
+                  style: GoogleFonts.poppins(
+                      color: Colors.black,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500))
+            ],
           ),
-          Container(
-            width: 32,
-            height: 32,
-            margin: EdgeInsets.symmetric(horizontal: 83),
-            decoration: BoxDecoration(
-                image: DecorationImage(
-              image: AssetImage("assets/ic_transaksi.png"),
-              fit: BoxFit.contain,
-            )),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 32,
+                height: 32,
+                margin: EdgeInsets.symmetric(horizontal: 75),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  image: AssetImage("assets/ic_transaksi.png"),
+                  fit: BoxFit.contain,
+                )),
+              ),
+              SizedBox(
+                height: 3,
+              ),
+              Text(
+                "Transaksi",
+                style: GoogleFonts.poppins(
+                    color: Colors.black,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500),
+              )
+            ],
           ),
         ],
       ),
