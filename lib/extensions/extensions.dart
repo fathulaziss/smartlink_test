@@ -1,1 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart' as auth;
+import 'package:smartlink_test/models/models.dart';
+
 part 'firebase_user_extension.dart';
