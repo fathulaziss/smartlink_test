@@ -1,4 +1,4 @@
-package com.example.smartlink_test
+package com.azis.smartlink_test
 
 import io.flutter.embedding.android.FlutterActivity
 

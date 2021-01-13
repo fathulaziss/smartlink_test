@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "762629031019",
+    "project_id": "smartlink-test-31d0d",
+    "storage_bucket": "smartlink-test-31d0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762629031019:android:f08fb8c65e7cea6dc01d2e",
+        "android_client_info": {
+          "package_name": "com.azis.smartlink_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762629031019-mvrin24eh9tgeq101g9gtudn5usosikl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyBeHp_j7QcVq_wF2YjWswSGl7y5ciUJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762629031019-mvrin24eh9tgeq101g9gtudn5usosikl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
