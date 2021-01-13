@@ -11,4 +11,15 @@ class UserServices {
       'profilePicture': user.profilePicture ?? ""
     });
   }
+
+  static Future<User> getUser(String id) async {
+    DocumentSnapshot snapshot = await _userCollection.doc(id).get();
+
+    return User(
+      id,
+      snapshot.data()['email'],
+      name: snapshot.data()['name'],
+      profilePicture: snapshot.data()['profilePicture'],
+    );
+  }
 }
