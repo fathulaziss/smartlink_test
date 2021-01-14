@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage> {
             },
             children: [
               Center(
-                child: Text("Laundry Page"), // Laundry Page
+                child: LaundryPage(), // Laundry Page
               ),
               Center(
                 child: Text("Transaksi Page"),
