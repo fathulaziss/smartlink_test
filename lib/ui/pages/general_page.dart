@@ -2,14 +2,12 @@ part of 'pages.dart';
 
 class GeneralPage extends StatelessWidget {
   final String title;
-  final String subtitle;
   final Function onBackButtonPressed;
   final Widget child;
   final Color backColor;
 
   GeneralPage(
       {this.title = "Tittle",
-      this.subtitle = "subtitle",
       this.onBackButtonPressed,
       this.child,
       this.backColor});
@@ -65,12 +63,6 @@ class GeneralPage extends StatelessWidget {
                               style: GoogleFonts.poppins(
                                   fontSize: 22, fontWeight: FontWeight.w500),
                             ),
-                            Text(
-                              subtitle,
-                              style: GoogleFonts.poppins(
-                                  color: "8D92A3".toColor(),
-                                  fontWeight: FontWeight.w300),
-                            )
                           ],
                         ),
                       ],
