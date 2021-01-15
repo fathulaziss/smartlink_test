@@ -11,3 +11,5 @@ TextStyle blackTextFont = GoogleFonts.poppins()
     .copyWith(color: '000000'.toColor(), fontWeight: FontWeight.w500);
 TextStyle whiteTextFont = GoogleFonts.poppins()
     .copyWith(color: 'FFFFFF'.toColor(), fontWeight: FontWeight.w500);
+TextStyle greyTextFont = GoogleFonts.poppins()
+    .copyWith(color: 'BEBEBE'.toColor(), fontWeight: FontWeight.w500);

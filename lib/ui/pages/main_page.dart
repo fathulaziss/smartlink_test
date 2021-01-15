@@ -35,12 +35,23 @@ class _MainPageState extends State<MainPage> {
               ),
               Center(
                 child: Text("Transaksi Page"),
+              ),
+              Center(
+                child: Text("Profile Page"),
               )
             ],
           )),
           Align(
             alignment: Alignment.bottomCenter,
-            child: CustomBottomNavBar(),
+            child: CustomBottomNavBar(
+              selectedIndex: selectedPage,
+              onTap: (index) {
+                setState(() {
+                  selectedPage = index;
+                });
+                pageController.jumpToPage(selectedPage);
+              },
+            ),
           )
         ],
       ),

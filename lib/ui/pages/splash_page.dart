@@ -29,7 +29,9 @@ class SplashPage extends StatelessWidget {
                 width: 260,
                 height: 46,
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.read<PageBloc>().add(GoToLoginPage());
+                  },
                   color: mainColor,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(22)),
